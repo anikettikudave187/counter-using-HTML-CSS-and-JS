@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>counter using html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Counter Using HTML</h1>
+    <div class="counterBox">
+        <div class="counterWrapper">
+            <p>Your current count is : <strong id="count">0</strong></p>
+            <hr class="seperator">
+            <p id="error" class="error">cannot go below 0</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="whiteBtn" onclick="decrement()">Decrement</button>
+        <button class="whiteBtn" onclick="increment()">Increment</button>
+        <button class="clear-btn" id="clearBtn" onclick="clearCount()" style="display: none;">Cear</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
